@@ -100,7 +100,7 @@
 
 Реализация действий, указанных в пункте 1.2, гарантируется классом Configurator. +
 
-* class ConfiguratorAction
+* class Configurator
 ** void enterSize() - ввод размера кроссворда;
 ** void enterWordWithDescription() - ввод слова с описанием;
 ** void configure() - конфигурация кроссворда.
