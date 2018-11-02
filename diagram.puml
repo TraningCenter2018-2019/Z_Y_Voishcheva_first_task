@@ -1,0 +1,19 @@
+@startuml
+!pragma graphviz_dot jdot
+class RunCrossword
+
+RunCrossword --> WorkProgram
+WorkProgram ---> User
+User ---> Word
+Configurator ---> Word
+WorkProgram ---> Configurator
+User ----> SystemUser
+SystemUser ----> Word
+Word ----> Cell
+Configurator ----> SystemUser
+SystemUser -----> LogicCrossword
+LogicCrossword -----> Word
+Cell ----> ConsoleCrosswordCell
+SystemUser -----> ConsoleCrosswordBoard
+ConsoleCrosswordBoard -----> ConsoleCrosswordCell
+@enduml
